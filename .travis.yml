@@ -33,4 +33,9 @@ install:
  - bin/travis_install
 
 script:
- - bin/travis_script
+  # time it out before travis kills it.
+  # If travis times out the build, it wont save the cache, meaning the
+  # next build will also most likely timeout
+  # (travis_wait doesnt work btw, theres still a global timeout of
+  # approx 40 mins it seems.
+  - timeout 35m bin/travis_script
