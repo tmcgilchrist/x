@@ -1,6 +1,6 @@
 [submodule "lib/disorder"]
 	path = lib/disorder
-	url = https://github.com/ambiata/disorder.hs.git
+	url = https://github.com/tmcgilchrist/disorder.hs.git
 [submodule "lib/p"]
 	path = lib/p
-	url = https://github.com/ambiata/p.git
+	url = https://github.com/tmcgilchrist/p.git
